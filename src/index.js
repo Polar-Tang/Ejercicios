@@ -32,11 +32,10 @@ const entraBoliche = () => {
 // repara el bug
 
 const listaCampeones = {
-    0: "bach",
-    1: "Mozzart",
-    2: "Stratvisky"
+    0: "bach",         // indice: 0
+    1: "Mozzart",      // indice: 1
+    2: "Stratvisky"    // indice: 2
 }
-console.log(listaCampeones["hola"])
 
 const mejoresPianistats = () => { 
 
@@ -47,7 +46,7 @@ const mejoresPianistats = () => {
 
 }
 
-console.log(mejoresPianistats())
+// console.log(mejoresPianistats())
 
 // EJERCICIO 3
 // tomaste la pastilla? MATRIX
@@ -91,12 +90,10 @@ const numeros = {
     "cero": 0
 }
 
-const sumaLetras = (a,b) => { 
-    for ( let i = 0; i < Object.keys(numeros).length; i++){
-        console.log("INdex", i)
 
-    }
+const sumaLetras = (a,b) => { 
+
 }
 
 // EJEMPLO DE USO
-console.log(sumaLetras("uno", "dos"))
+// console.log(sumaLetras("uno", "dos"))
