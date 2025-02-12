@@ -61,7 +61,7 @@ const arrayDesc = hints.map((hint, index) => {
             <ul id="${hintId}" style="display: none;">${hint.hints}</ul>
         </div>
         <ul id="${logId}"></ul>
-        <input type="text" > 
+        <input data-log-id="${logId}" class="hint-input" type="text" > 
     `;
 });
 

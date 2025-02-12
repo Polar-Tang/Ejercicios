@@ -1,10 +1,18 @@
-const input = document.querySelector("input");
-const log = document.getElementById("log");
+const input = document.querySelectorAll("input")
 
-input.addEventListener("keydown", logKey);
+input.forEach(input => {
+    input.addEventListener("keydown",logKey)
+})
 
 function logKey(e) {
     if (e.key === 'Enter') {
-        log.innerHTML    += `<li>${e.target.value} </li>`;
+        const inputField = e.target
+        const logId = inputField.dataset.logId
+        const log = document.getElementById(logId)
+        
+        if (log) {
+            log.innerHTML += `<li>${inputField.value}</li>`
+            inputField.value = ""
+        }
     }
 }
